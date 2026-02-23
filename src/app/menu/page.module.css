@@ -1,0 +1,137 @@
+.main {
+    padding: 4rem 0;
+    min-height: 80vh;
+}
+
+.title {
+    text-align: center;
+    font-size: 3rem;
+    margin-bottom: 3rem;
+    text-transform: uppercase;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.mealSelector {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 2.5rem;
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+    padding: 1.5rem;
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.mealLabel {
+    font-size: 0.9rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.mealOptions {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.mealBtn {
+    padding: 0.6rem 1.4rem;
+    border-radius: 50px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    background: transparent;
+    color: white;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-family: inherit;
+}
+
+.mealBtn:hover {
+    background: rgba(255, 255, 255, 0.1);
+    border-color: white;
+}
+
+.mealBtnActive {
+    background: white;
+    color: #D32F2F;
+    border-color: white;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.tabs {
+    display: flex;
+    justify-content: flex-start;
+    overflow-x: auto;
+    white-space: nowrap;
+    gap: 0.5rem;
+    margin-bottom: 2.5rem;
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+    padding: 0.75rem;
+    border-radius: 100px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    width: 100%;
+    max-width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    scrollbar-width: none;
+    /* Hide scrollbar for Firefox */
+    -ms-overflow-style: none;
+    /* Hide scrollbar for IE/Edge */
+}
+
+.tabs::-webkit-scrollbar {
+    display: none;
+    /* Hide scrollbar for Chrome/Safari */
+}
+
+.tab {
+    background: transparent;
+    border: 1px solid transparent;
+    padding: 0.6rem 1.4rem;
+    border-radius: 50px;
+    font-size: 1rem;
+    color: rgba(255, 255, 255, 0.8);
+    cursor: pointer;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    font-family: var(--font-body);
+    font-weight: 500;
+}
+
+.tab:hover {
+    color: white;
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.activeTab {
+    background: white;
+    color: #D32F2F;
+    /* High contrast brand red */
+    font-weight: 700;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.activeTab:hover {
+    background: white;
+    color: #D32F2F;
+    transform: translateY(-1px);
+}
+
+
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 2rem;
+}
